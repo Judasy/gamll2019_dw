@@ -17,7 +17,7 @@ object RealTimeStartupApp {
     stream.map(_.value()).map(flag => {
       println(flag)
       flag
-    })
+    }).print()
 
 
     streamingContext.start()

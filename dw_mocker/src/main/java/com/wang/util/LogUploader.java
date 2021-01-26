@@ -24,15 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LogUploader {
-
-
-
-
     public static void sendLogStream(String log){
         try{
             //不同的日志类型对应不同的URL
-
-            URL url  =new URL("http://logserver/log");
+            URL url  =new URL("http://192.168.1.102/log");
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             //设置请求方式为post
